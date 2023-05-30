@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Voice Enabled Online Code Editor</title>
+        <meta name="description" content="An online webpage visualiser editor developed by Shubham Gautam">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./scss/style.css">
+    </head>
+    <body>
+
+        <div class="control-blk">
+            <h4><a href="#">Code Editor</a></h4>
+            <ul class="toggle-btns">
+                <li data-target="#html-blk">HTML</li>
+                <li data-target="#css-blk">CSS</li>
+                <li data-target="#js-blk">JavaScript</li>
+                <li data-target="#result-blk">Result</li>
+            </ul>
+            
+            <button id="run" type="submit">Run</button>
+        </div>
+
+        <div class="voice-recog">
+            <button id="voiceRecogBtn">Start Listening</button>
+        </div>
+        <!--HTML Block-->
+        <div class="code-area">
+            <div class="codeContainer selected" id="html-blk">
+                <textarea name="html" id="html" placeholder="Enter HTML code (Body here)"></textarea>
+            </div>
+            
+            <!--CSS Block-->
+            <div class="codeContainer" id="css-blk">
+                <textarea name="css" id="css" placeholder="Enter CSS code (Link is pre-attached)"></textarea>
+            </div>
+            
+            <!--Javascript Block-->
+            <div class="codeContainer" id="js-blk">
+                <textarea name="js" id="js" placeholder="Enter Javascript code (Link is pre-attached)"></textarea>
+            </div>
+            
+            <!--Result Block-->
+            <div class="codeContainer selected" id="result-blk">
+                <iframe src="" frameborder="0" id="result"></iframe>
+            </div>
+        </div>
+
+        <div class="popup">
+            <h3>We've recieved the following input from your side. You may copy and paste it.</h3>
+            <h3></h3>
+            <div class="popBtns">
+                <button id="copyVoiceText">Copy</button>
+                <button id="closePopup">Close</button>
+            </div>
+        </div>
+
+        <!--Script Tags-->
+        <script src="js/index.js"></script>
+    </body>
+</html>
