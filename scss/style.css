@@ -1,0 +1,302 @@
+.control-blk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: #444;
+    padding: 0 15px;
+  }
+  
+  .control-blk h4 {
+    font-weight: 200;
+    color: #fff;
+  }
+  
+  .control-blk h4 a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px;
+  }
+  
+  ul li {
+    border-radius: 5px;
+    margin: 0 1px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #444;
+    border: 1px solid #000;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+  
+  ul li:hover {
+    background-color: #444;
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  #run {
+    border-radius: 5px;
+    margin: 0 1px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #444;
+    border: 1px solid #000;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+  
+  #run:hover {
+    background-color: #444;
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  .code-area {
+    padding: 20px 10px;
+    margin: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  
+  .code-area div {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    height: 80vh;
+    display: none;
+  }
+  
+  .code-area div textarea {
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    border: 1px solid black;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    border-radius: 5px;
+    -webkit-animation: fadeIn 0.2s 0s ease;
+            animation: fadeIn 0.2s 0s ease;
+  }
+  
+  .code-area div textarea:focus {
+    background-color: #fff;
+    border: 1.5px solid #232323;
+  }
+  
+  .code-area div textarea::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  
+  .code-area div textarea:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  
+  .code-area div textarea::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  
+  .code-area div textarea::placeholder {
+    font-size: 16px;
+  }
+  
+  .code-area div iframe {
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    border: 1px solid black;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    border-radius: 5px;
+    -webkit-animation: fadeIn 0.2s 0s ease;
+            animation: fadeIn 0.2s 0s ease;
+    background-color: #fff;
+  }
+  
+  .code-area div iframe:focus {
+    background-color: #fff;
+    border: 1.5px solid #232323;
+  }
+  
+  .code-area div iframe::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  
+  .code-area div iframe:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  
+  .code-area div iframe::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  
+  .code-area div iframe::placeholder {
+    font-size: 16px;
+  }
+  
+  .selected {
+    display: block !important;
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .voice-recog {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .voice-recog button {
+    border-radius: 5px;
+    margin: 0 1px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #444;
+    border: 1px solid #000;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+    cursor: pointer;
+    background-color: #444;
+    color: #fff;
+  }
+  
+  .voice-recog button:hover {
+    background-color: #444;
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  .voice-recog button:hover {
+    background: #fff;
+    border: 1px solid #444;
+    color: #000;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  
+  html, body {
+    overflow-x: hidden;
+    background: #ddd;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background: #fff;
+    z-index: 100;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #232323;
+    max-width: 80%;
+    min-width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: none;
+  }
+  
+  .popup h3:nth-of-type(2) {
+    background-color: #ddd;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .popup .popBtns {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .popup button {
+    border-radius: 5px;
+    margin: 0 1px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #444;
+    border: 1px solid #000;
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+    cursor: pointer;
+    display: block;
+    margin: 0 10px;
+  }
+  
+  .popup button:hover {
+    background-color: #444;
+    color: #fff;
+    border-color: #fff;
+  }
+  /*# sourceMappingURL=style.css.map */
